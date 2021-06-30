@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* __________ GLOBAL COLORS __________ */
+:root{
+    --main_dark_color: #23272a;
+    --light_gray_bg: #f6f6f6;
+}
+/* __________ END GLOBAL COLORS __________ */
+
+
 
 /* __________ COMMON STYLES __________ */
 .container{
@@ -15,13 +30,29 @@ body{
     margin: auto;
 }
 
+p{
+    line-height: 30px;
+    font-weight: 500;
+
+    margin: 1rem 0;
+}
+
+.logo{
+    cursor: pointer;
+}
+
 button{
     border-radius: 30px;
     border: transparent;
     background-color: white;
-    color: black;
+    color: var(--main_dark_color);
     padding: 8px 15px;
     cursor: pointer;
+}
+.big_btn{
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
 }
 
 .center{
@@ -34,10 +65,21 @@ button{
 h1{
     font-size: 3.5rem;
 }
+h2{
+    font-size: 2.5rem;
+}
+
+.float{
+    float: left;
+}
 
 .dark_bg {
-    background-color: #23272a;
+    background-color: var(--main_dark_color);
     color: white;
+}
+
+img{
+    max-width: 100%;
 }
 /* __________ END COMMON STYLES __________ */
 
@@ -86,18 +128,38 @@ header a{
 
 .hero .content_wrapper p{
     margin: 2rem 0;
-    line-height: 30px;
-    font-weight: 500;
 }
 
-.hero .content_wrapper button{
-    margin: 0 10px;
-    padding: 15px 30px;
-    font-size: 1rem;
-}
 .hero .content_wrapper button i{
     margin-right: 5px;
 }
 /* ------------ HERO SECTION ------------ */
+
+
+/* ------------ INFO SECTIONS ------------ */
+.info_section{
+    padding: 10vh 0;
+}
+
+.info_section .col_left{
+    width: 60%;
+}
+
+.info_section .col_right{
+    width: 40%;
+    padding-top: 2rem;
+    padding-left: 10%;
+}
+
+#second_info_section{
+    background-color: var(--light_gray_bg);
+}
+
+#second_info_section .col_right{
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 10%;
+}
+/* ------------ END INFO SECTIONS ------------ */
 
 /* __________ END MAIN __________ */
