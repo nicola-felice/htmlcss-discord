@@ -105,7 +105,10 @@ i{
 
 /* __________ HEADER __________ */
 header{
-    background-color: #3161e0;
+    /* background-color: #3161e0; */
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: top;
 }
 
 header .container{
@@ -132,7 +135,7 @@ header a{
     background-image: url("../img/jumbo.png");
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    min-height: 70vh;
 
     position: relative;
 }
@@ -171,10 +174,10 @@ header a{
     padding-left: 0;
     padding-right: 10%;
 }
-/* ------------ END INFO SECTIONS ------------ */
+/* ------------ END INFO SECTIONS ------- */
 
 
-/* ------------ AFFIDABILITA' SECTION ------------ */
+/* ------------ AFFIDABILITA' SECTION ----- */
 .affidabilita_section{
     padding: 15vh 0 10vh 0;
     text-align: center;
@@ -192,7 +195,7 @@ header a{
 .stars{
     max-width: 45%;
 }
-/* ------------ END AFFIDABILITA' SECTION -------- */
+/* ------- END AFFIDABILITA' SECTION ----- */
 
 
 /* __________ END MAIN __________ */
@@ -211,7 +214,7 @@ footer h4{
     color: var(--text_violet);
 }
 
-/* ------------ RESOURCES SECTION ------------ */
+/* -------- RESOURCES SECTION -------- */
 footer .socials{
     width: calc((100% / 6) * 2);
 }
@@ -242,10 +245,10 @@ footer .resources li{
 footer .resources ul{
     list-style: none;
 }
-/* ------------ END RESOURCES SECTION ------------ */
+/* -------- END RESOURCES SECTION -------- */
 
 
-/* ------------ SIGN IN SECTION ------------ */
+/* -------- SIGN IN SECTION -------- */
 footer hr{
     margin-top: 1.5rem;
 }
@@ -262,7 +265,7 @@ footer hr{
     background-color: var(--main_violet);
     color: white;
 }
-/* ------------ SIGN IN SECTION ---------- */
+/* -------- END SIGN IN SECTION -------- */
 
 
 /* __________ END FOOTER __________ */
