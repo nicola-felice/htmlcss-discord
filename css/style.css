@@ -12,6 +12,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: var(--main_dark_color);
 }
 
 /* __________ GLOBAL COLORS __________ */
@@ -31,6 +32,10 @@ body{
     margin: auto;
 }
 
+hr{
+    color: var(--main_violet);
+}
+
 p{
     line-height: 30px;
     font-weight: 500;
@@ -46,7 +51,6 @@ button{
     border-radius: 30px;
     border: transparent;
     background-color: white;
-    color: var(--main_dark_color);
     padding: 8px 15px;
     cursor: pointer;
 }
@@ -72,6 +76,9 @@ h1{
 }
 h2{
     font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5rem;
 }
 
 .float{
@@ -182,9 +189,42 @@ header a{
 }
 
 .stars{
-    max-width: 40%;
+    max-width: 45%;
 }
 /* ------------ END AFFIDABILITA' SECTION -------- */
 
 
 /* __________ END MAIN __________ */
+
+
+
+/* __________ FOOTER __________ */
+footer{
+    background-color: var(--main_dark_color);
+    padding: 5vh;
+    color: white;
+}
+
+.socials{
+    border: 2px solid yellowgreen;
+    width: calc((100% / 6) * 2);
+}
+
+.resources{
+    border: 2px solid turquoise;
+    width: calc(100% / 6);
+}
+
+.sign_in_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+
+.sign_in_section button{
+    background-color: var(--main_violet);
+    color: white;
+}
+/* __________ END FOOTER __________ */
