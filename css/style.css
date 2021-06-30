@@ -10,7 +10,7 @@ body{
 
 /* __________ COMMON STYLES __________ */
 .container{
-    width: 70%;
+    width: 80%;
     max-width: 1000px;
     margin: auto;
 }
@@ -22,6 +22,22 @@ button{
     color: black;
     padding: 8px 15px;
     cursor: pointer;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+.dark_bg {
+    background-color: #23272a;
+    color: white;
 }
 /* __________ END COMMON STYLES __________ */
 
@@ -46,3 +62,42 @@ header a{
     margin: 0 15px;
 }
 /* __________ END HEADER __________ */
+
+
+
+/* __________ MAIN __________ */
+
+/* ------------ HERO SECTION ------------ */
+.hero{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+
+    position: relative;
+}
+
+.hero .content_wrapper{
+    text-align: center;
+    color: white;
+    width: 40%;
+    max-width: 650px;
+}
+
+.hero .content_wrapper p{
+    margin: 2rem 0;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.hero .content_wrapper button{
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+}
+.hero .content_wrapper button i{
+    margin-right: 5px;
+}
+/* ------------ HERO SECTION ------------ */
+
+/* __________ END MAIN __________ */
