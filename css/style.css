@@ -18,6 +18,7 @@ body{
 :root{
     --main_dark_color: #23272a;
     --light_gray_bg: #f6f6f6;
+    --main_violet: #8ea1e1;
 }
 /* __________ END GLOBAL COLORS __________ */
 
@@ -62,6 +63,10 @@ button{
     transform: translate(-50%, -50%);
 }
 
+.gray_bg{
+    background-color: var(--light_gray_bg);
+}
+
 h1{
     font-size: 3.5rem;
 }
@@ -80,6 +85,11 @@ h2{
 
 img{
     max-width: 100%;
+}
+
+
+i{
+    margin-right: 5px;
 }
 /* __________ END COMMON STYLES __________ */
 
@@ -130,9 +140,6 @@ header a{
     margin: 2rem 0;
 }
 
-.hero .content_wrapper button i{
-    margin-right: 5px;
-}
 /* ------------ HERO SECTION ------------ */
 
 
@@ -151,15 +158,33 @@ header a{
     padding-left: 10%;
 }
 
-#second_info_section{
-    background-color: var(--light_gray_bg);
-}
-
 #second_info_section .col_right{
     padding-top: 2rem;
     padding-left: 0;
     padding-right: 10%;
 }
 /* ------------ END INFO SECTIONS ------------ */
+
+
+/* ------------ AFFIDABILITA' SECTION ------------ */
+.affidabilita_section{
+    padding: 15vh 0 10vh 0;
+    text-align: center;
+}
+
+.affidabilita_section h3{
+    margin-bottom: 2rem;
+}
+
+.affidabilita_section button{
+    background-color: var(--main_violet);
+    color: white;
+}
+
+.stars{
+    max-width: 40%;
+}
+/* ------------ END AFFIDABILITA' SECTION -------- */
+
 
 /* __________ END MAIN __________ */
