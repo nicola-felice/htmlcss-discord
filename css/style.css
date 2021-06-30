@@ -20,6 +20,7 @@ body{
     --main_dark_color: #23272a;
     --light_gray_bg: #f6f6f6;
     --main_violet: #8ea1e1;
+    --text_violet: #7289da;
 }
 /* __________ END GLOBAL COLORS __________ */
 
@@ -33,7 +34,7 @@ body{
 }
 
 hr{
-    color: var(--main_violet);
+    color: var(--text_violet);
 }
 
 p{
@@ -78,7 +79,7 @@ h2{
     font-size: 2.5rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .float{
@@ -205,14 +206,48 @@ footer{
     color: white;
 }
 
-.socials{
-    border: 2px solid yellowgreen;
-    width: calc((100% / 6) * 2);
+footer h3,
+footer h4{
+    color: var(--text_violet);
 }
 
-.resources{
-    border: 2px solid turquoise;
+/* ------------ RESOURCES SECTION ------------ */
+footer .socials{
+    width: calc((100% / 6) * 2);
+}
+footer .socials i{
+    margin-right: .75rem;
+    font-size: 1.25rem;
+}
+footer .socials img{
+    width: 20px;
+}
+footer .lenguage_selection{
+    margin: 1rem 0;
+}
+
+footer .lenguage_selection i{
+    vertical-align: middle;
+}
+
+footer .resources{
     width: calc(100% / 6);
+}
+
+footer .resources li{
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+footer .resources ul{
+    list-style: none;
+}
+/* ------------ END RESOURCES SECTION ------------ */
+
+
+/* ------------ SIGN IN SECTION ------------ */
+footer hr{
+    margin-top: 1.5rem;
 }
 
 .sign_in_section{
@@ -220,11 +255,14 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .sign_in_section button{
     background-color: var(--main_violet);
     color: white;
 }
+/* ------------ SIGN IN SECTION ------------ */
+
+
 /* __________ END FOOTER __________ */
