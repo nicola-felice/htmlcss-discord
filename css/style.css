@@ -33,10 +33,6 @@ body{
     margin: auto;
 }
 
-hr{
-    color: var(--text_violet);
-}
-
 p{
     line-height: 30px;
     font-weight: 500;
@@ -105,10 +101,7 @@ i{
 
 /* __________ HEADER __________ */
 header{
-    /* background-color: #3161e0; */
-    background-image: url('../img/jumbo.png');
-    background-size: cover;
-    background-position: top;
+    background-color: #3161e0;
 }
 
 header .container{
@@ -221,27 +214,31 @@ footer .socials{
 footer .socials i{
     margin-right: .75rem;
     font-size: 1.25rem;
+    cursor: pointer;
 }
 footer .socials img{
     width: 20px;
 }
 footer .lenguage_selection{
     margin: 1rem 0;
+    cursor: pointer;
 }
+
 
 footer .lenguage_selection i{
     vertical-align: middle;
 }
-
 footer .resources{
     width: calc(100% / 6);
 }
-
 footer .resources li{
     margin: 5px 0;
     text-transform: capitalize;
 }
-
+footer .resources li a{
+    text-decoration: none;
+    color: white;    
+}
 footer .resources ul{
     list-style: none;
 }
@@ -259,6 +256,8 @@ footer hr{
     align-items: center;
 
     padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text_violet);
 }
 
 .sign_in_section button{
