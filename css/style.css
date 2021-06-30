@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* __________ COMMON STYLES __________ */
+.container{
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+button{
+    border-radius: 30px;
+    border: transparent;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+/* __________ END COMMON STYLES __________ */
+
+
+
+/* __________ HEADER __________ */
+header{
+    background-color: #3161e0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+/* __________ END HEADER __________ */
