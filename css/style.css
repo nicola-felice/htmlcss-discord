@@ -40,10 +40,6 @@ p{
     margin: 1rem 0;
 }
 
-.logo{
-    cursor: pointer;
-}
-
 button{
     border-radius: 30px;
     border: transparent;
@@ -98,6 +94,10 @@ img{
 i{
     margin-right: 5px;
 }
+
+.logo{
+    vertical-align: middle;
+}
 /* __________ END COMMON STYLES __________ */
 
 
@@ -105,14 +105,36 @@ i{
 /* __________ HEADER __________ */
 header{
     background-color: #3161e0;
+    padding: 1rem 0;
 }
 
-header .container{
+header .logo_wrapper,
+header .button_wrapper,
+header nav{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav{
+    width: 60%;
+    text-align: center;
+}
+
+header .logo_wrapper,
+header .button_wrapper{
+    width: 20%;
+}
+
+header .button_wrapper{
+    text-align: right;
+}
+
+/* flexbox alternative */
+/* header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-}
+} */
 
 header a{
     text-transform: capitalize;
@@ -249,14 +271,10 @@ footer .resources ul{
 
 
 /* -------- SIGN IN SECTION -------- */
-footer hr{
-    margin-top: 1.5rem;
-}
-
 .sign_in_section{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 
     padding-top: 1.5rem;
     margin-top: 1.5rem;
@@ -266,6 +284,17 @@ footer hr{
 .sign_in_section button{
     background-color: var(--main_violet);
     color: white;
+}
+
+footer .logo_wrapper,
+footer .button_wrapper{
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+footer .button_wrapper{
+    text-align: right;
 }
 /* -------- END SIGN IN SECTION -------- */
 
